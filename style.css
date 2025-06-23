@@ -23,6 +23,41 @@ body{
   font-weight: 400;
 }
 
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.dashboard{
+  display: flex;
+  gap: 18px;
+  padding-top: 15px;
+  padding-left: 15px;
+  flex-direction: column;
+  background-color: #4DA8DA;
+  color: white;
+}
+
+.dashboard div{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bottom-margin{
+  margin-bottom: 40px;
+}
+
+.dashboard img{
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg) brightness(100%) contrast(100%);
+}
+
+.dashboard p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
 .trending{
   display: flex;
   flex-direction: column;
