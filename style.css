@@ -28,7 +28,9 @@ body{
   grid-template-columns: 1fr 4fr;
 }
 
-
+.dashboard img{
+  width: 23px;
+}
 
 .trending{
   display: flex;
