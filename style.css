@@ -8,29 +8,104 @@ body{
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.box-shadow{
-  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.capitalized{
-  text-transform: capitalize;
-  margin-top: 3px;
-  color: grey;
-  font-weight: 300;
-}
-
-.trending-text{
-  font-weight: 400;
-}
 
 .container{
   display: grid;
   grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "nav header"
+    "nav main "
+    "nav main ";
 }
 
-.dashboard img{
-  width: 23px;
+/********************* Navbar Styles *************************/
+
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 15px;
+  padding-top: 10px;
+  background-color: #578FCA;
+  grid-area: nav;
 }
+
+.dashboard div{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+
+.dashboard img{
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg) brightness(100%) contrast(100%);
+}
+
+.dashboard p{
+  text-transform: capitalize;
+  font-weight: 500;
+  color: white;
+}
+
+
+.dashboard-icon-div img{
+  width: 30px;
+}
+
+.dashboard-icon-div p{
+  font-size: 20px;
+}
+
+.bottom-margin{
+  margin-bottom: 40px;
+}
+
+
+
+/******************* Header Styles *********************/
+
+.header{
+  grid-area: header;
+  padding: 0.9375rem 0.625rem;
+}
+
+/******************** Main Section Styles *******************/
+
+.main-container{
+  grid-area: main;
+}
+
+.main-container{
+  display: flex;
+  
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+article{
+  border: 1px dotted red;
+  height: 200px;
+  width: 200px;
+}
+
+.aside-container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+aside{
+  flex: 1 1 0;
+}
+
+
+
+/*************** "Trending" Section Styles  *************/
 
 .trending{
   display: flex;
@@ -58,3 +133,21 @@ body{
   width: 40px;
   height: 40px;
 }
+
+.box-shadow{
+  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.capitalized{
+  text-transform: capitalize;
+  margin-top: 3px;
+  color: grey;
+  font-weight: 300;
+}
+
+.trending-text{
+  font-weight: 400;
+}
+
+
+
