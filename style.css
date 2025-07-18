@@ -1,15 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-areas:
@@ -20,94 +19,198 @@ body{
 
 /********************* Navbar Styles *************************/
 
-.dashboard{
+.dashboard {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-left: 15px;
   padding-top: 10px;
-  background-color: #578FCA;
+  background-color: #578fca;
   grid-area: nav;
 }
 
-.dashboard div{
+.dashboard div {
   display: flex;
   gap: 18px;
   align-items: center;
 }
 
-
-.dashboard img{
+.dashboard img {
   width: 20px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg) brightness(100%) contrast(100%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
+    brightness(100%) contrast(100%);
 }
 
-.dashboard p{
+.dashboard p {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
 }
 
-
-.dashboard-icon-div img{
+.dashboard-icon-div img {
   width: 30px;
 }
 
-.dashboard-icon-div p{
+.dashboard-icon-div p {
   font-size: 20px;
 }
 
-.bottom-margin{
+.bottom-margin {
   margin-bottom: 40px;
 }
 
-
-
 /******************* Header Styles *********************/
 
-.header{
+.header {
   grid-area: header;
-  padding: 0.9375rem 0.625rem;
+  padding: 0.9375rem 3.75rem 0.9375rem 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
+
+#header-top{
+  display: flex;
+  justify-content:space-between;
+}
+
+#search-div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+#search-icon {
+  width: 20px;
+}
+
+#search-bar {
+  min-width: 380px;
+  max-width: 500px;
+  padding: 0.25rem 0;
+  background-color: #e7eff7;
+  border: none;
+  border-radius: 15px;
+}
+
+#header-top > div:nth-child(2){
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+#notification-icon{
+  width: 18px;
+}
+
+#profile-icon-div{
+  background-color: rgb(241, 241, 5);
+  display: flex;
+  border-radius: 50%;
+  padding: 0.1875rem;
+}
+
+#profile-icon-1{
+  width: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
+    brightness(100%) contrast(100%);
+}
+
+#header-top > div:nth-child(2) > p{
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+#header-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#header-bottom > div:nth-child(1){
+  display: flex;
+  gap: 0.9375rem;
+}
+
+#profile-icon-2{
+  width: 40px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
+    brightness(100%) contrast(100%);
+}
+
+#header-bottom > div:nth-child(1)> div:nth-child(2){
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header-bottom > div:nth-child(1) p:nth-child(1){
+  font-size: 0.6875rem;
+}
+
+#header-bottom > div:nth-child(1) p:nth-child(2){
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#header-bottom > div:nth-child(2){
+  display: flex;
+  gap: 0.9375rem;
+  align-items: center;
+}
+
+.header-button{
+  background-color: #578fca;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.4375rem 1.4375rem;
+  border-radius: 1.125rem;
+}
+
+
+
+
+
 
 /******************** Main Section Styles *******************/
 
-.main-container{
+.main-container {
   grid-area: main;
 }
 
-.main-container{
+.main-container {
   display: flex;
-  
 }
 
-main{
+main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
-article{
+article {
   border: 1px dotted red;
   height: 200px;
   width: 200px;
 }
 
-.aside-container{
+.aside-container {
   display: flex;
   flex-direction: column;
-
 }
 
-aside{
+aside {
   flex: 1 1 0;
 }
 
-
-
 /*************** "Trending" Section Styles  *************/
 
-.trending{
+.trending {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -116,38 +219,35 @@ aside{
   padding: 18px;
 }
 
-.t{
+.t {
   display: flex;
   column-gap: 15px;
   align-items: center;
 }
 
-.t > div:first-child{
+.t > div:first-child {
   background-color: rgb(216, 247, 255);
   border-radius: 50%;
   display: flex;
   padding: 5px;
 }
 
-.tsvg{
+.tsvg {
   width: 40px;
   height: 40px;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.capitalized{
+.capitalized {
   text-transform: capitalize;
   margin-top: 3px;
   color: grey;
   font-weight: 300;
 }
 
-.trending-text{
+.trending-text {
   font-weight: 400;
 }
-
-
-
