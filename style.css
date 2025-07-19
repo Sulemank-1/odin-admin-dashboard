@@ -194,7 +194,7 @@ main {
   gap: 20px;
 }
 
-#project-heading{
+.main-headings{
   text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 10px;
