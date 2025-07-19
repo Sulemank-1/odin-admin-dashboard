@@ -180,44 +180,73 @@ body {
 /******************** Main Section Styles *******************/
 
 .main-container {
-  grid-area: main;
-}
-
-.main-container {
   display: flex;
+  gap: 20px;
+  grid-area: main;
+  background-color: #e7eff7;
+  padding: 25px 20px 40px 15px;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
 }
 
+#project-heading{
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
 article {
-  border: 1px dotted red;
+  display: flex;
+  flex-direction: column;
   height: 200px;
-  width: 200px;
+  width: 300px;
+  border-left: 7px solid rgb(212, 212, 4);
+  border-radius: 5px;
+  padding: 25px 20px;
+  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .card-heading{
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 15px;
+  margin-bottom: 3px;
 }
 
 .card-text{
-  font-size: 12px;
+  font-size: 13px;
   color: grey;
+  font-weight: 200;
+}
+
+.card-icons-div{
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.card-icons{
+  width: 20px;
 }
 
 
 .aside-container {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 aside {
   flex: 1 1 0;
+  background-color: white;
 }
 
 /*************** "Trending" Section Styles  *************/
