@@ -69,9 +69,9 @@ body {
   gap: 1.25rem;
 }
 
-#header-top{
+#header-top {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 #search-div {
@@ -93,76 +93,75 @@ body {
   border-radius: 15px;
 }
 
-#header-top > div:nth-child(2){
+#header-top > div:nth-child(2) {
   display: flex;
   align-items: center;
   gap: 1.25rem;
   margin-right: 0.75rem;
 }
 
-#notification-icon{
+#notification-icon {
   width: 18px;
 }
 
-#profile-icon-div{
+#profile-icon-div {
   background-color: rgb(241, 241, 5);
   display: flex;
   border-radius: 50%;
   padding: 0.1875rem;
 }
 
-#profile-icon-1{
+#profile-icon-1 {
   width: 30px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
     brightness(100%) contrast(100%);
 }
 
-#header-top > div:nth-child(2) > p{
+#header-top > div:nth-child(2) > p {
   font-weight: 500;
   font-size: 0.875rem;
 }
 
-#header-bottom{
+#header-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
-#header-bottom > div:nth-child(1){
+#header-bottom > div:nth-child(1) {
   display: flex;
   gap: 0.9375rem;
 }
 
-#profile-icon-2{
+#profile-icon-2 {
   width: 40px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
     brightness(100%) contrast(100%);
 }
 
-#header-bottom > div:nth-child(1)> div:nth-child(2){
+#header-bottom > div:nth-child(1) > div:nth-child(2) {
   display: flex;
   gap: 0.25rem;
   flex-direction: column;
   justify-content: center;
 }
 
-#header-bottom > div:nth-child(1) p:nth-child(1){
+#header-bottom > div:nth-child(1) p:nth-child(1) {
   font-size: 0.6875rem;
 }
 
-#header-bottom > div:nth-child(1) p:nth-child(2){
+#header-bottom > div:nth-child(1) p:nth-child(2) {
   font-size: 1rem;
   font-weight: 500;
 }
 
-#header-bottom > div:nth-child(2){
+#header-bottom > div:nth-child(2) {
   display: flex;
   gap: 0.9375rem;
   align-items: center;
 }
 
-.header-button{
+.header-button {
   background-color: #578fca;
   text-transform: capitalize;
   color: white;
@@ -171,11 +170,6 @@ body {
   padding: 0.4375rem 1.4375rem;
   border-radius: 1.125rem;
 }
-
-
-
-
-
 
 /******************** Main Section Styles *******************/
 
@@ -194,12 +188,11 @@ main {
   gap: 20px;
 }
 
-.main-headings{
+.main-headings {
   text-transform: capitalize;
   font-weight: 500;
   margin-bottom: 10px;
 }
-
 
 article {
   display: flex;
@@ -213,30 +206,31 @@ article {
   background-color: white;
 }
 
-.card-heading{
+.card-heading {
   font-weight: 500;
   text-transform: capitalize;
   font-size: 15px;
   margin-bottom: 3px;
 }
 
-.card-text{
+.card-text {
   font-size: 13px;
   color: grey;
   font-weight: 200;
 }
 
-.card-icons-div{
+.card-icons-div {
   display: flex;
   justify-content: end;
   gap: 15px;
   margin-top: auto;
 }
 
-.card-icons{
+.card-icons {
   width: 20px;
 }
 
+/************* "Annoucements" Section Styles ****************/
 
 .aside-container {
   display: flex;
@@ -247,6 +241,42 @@ article {
 aside {
   flex: 1 1 0;
   background-color: white;
+}
+
+.announcements-div {
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.announcements-div > div:nth-of-type(1){
+  border-bottom: 1px solid #e7eff7;
+  padding-bottom: 20px;
+}
+
+
+.announcements-div > div:nth-of-type(2){
+  border-bottom: 1px solid #e7eff7;
+  padding: 20px 0;
+}
+
+.announcements-div > div:nth-of-type(3){
+  padding-top: 20px;
+}
+
+
+
+
+.announcements-div p:nth-child(1){
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.announcements-div p:nth-child(2){
+  font-size: 12px;
+  color: grey;
 }
 
 /*************** "Trending" Section Styles  *************/
