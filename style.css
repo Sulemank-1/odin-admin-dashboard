@@ -281,6 +281,11 @@ aside {
 
 /*************** "Trending" Section Styles  *************/
 
+.trending-container{
+  border-radius: 5px;
+  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .trending {
   display: flex;
   flex-direction: column;
@@ -308,9 +313,6 @@ aside {
   height: 40px;
 }
 
-.box-shadow {
-  box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
-}
 
 .capitalized {
   text-transform: capitalize;
