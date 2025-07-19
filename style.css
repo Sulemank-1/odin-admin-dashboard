@@ -10,7 +10,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas:
     "nav header"
     "nav main "
@@ -22,16 +22,16 @@ body {
 .dashboard {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-left: 15px;
-  padding-top: 10px;
+  gap: 0.75rem;
+  padding-left: 0.9375rem;
+  padding-top: 0.625rem;
   background-color: #578fca;
   grid-area: nav;
 }
 
 .dashboard div {
   display: flex;
-  gap: 18px;
+  gap: 1.125rem;
   align-items: center;
 }
 
@@ -52,11 +52,11 @@ body {
 }
 
 .dashboard-icon-div p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .bottom-margin {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 /******************* Header Styles *********************/
@@ -86,7 +86,7 @@ body {
 
 #search-bar {
   min-width: 380px;
-  max-width: 500px;
+  width: 600px;
   padding: 0.25rem 0;
   background-color: #e7eff7;
   border: none;
@@ -175,33 +175,34 @@ body {
 
 .main-container {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   grid-area: main;
   background-color: #e7eff7;
-  padding: 25px 20px 40px 15px;
+  padding: 1.5625rem 1.25rem 2.5rem 0.9375rem;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .main-headings {
   text-transform: capitalize;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 article {
   display: flex;
   flex-direction: column;
   height: 200px;
-  width: 300px;
+  max-width: 500px;
+  min-width: 200px;
   border-left: 7px solid rgb(212, 212, 4);
   border-radius: 5px;
-  padding: 25px 20px;
+  padding: 1.5625rem 1.25rem;
   box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
@@ -209,12 +210,12 @@ article {
 .card-heading {
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 15px;
-  margin-bottom: 3px;
+  font-size: 0.9375rem;
+  margin-bottom: 0.1875rem;
 }
 
 .card-text {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: grey;
   font-weight: 200;
 }
@@ -222,7 +223,7 @@ article {
 .card-icons-div {
   display: flex;
   justify-content: end;
-  gap: 15px;
+  gap: 0.9375rem;
   margin-top: auto;
 }
 
@@ -235,47 +236,45 @@ article {
 .aside-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 aside {
-  flex: 1 1 0;
   background-color: white;
+  max-width: 250px;
 }
 
 .announcements-div {
-  padding: 25px;
+  padding: 1.5625rem;
   border-radius: 5px;
   box-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .announcements-div > div:nth-of-type(1){
   border-bottom: 1px solid #e7eff7;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 
 .announcements-div > div:nth-of-type(2){
   border-bottom: 1px solid #e7eff7;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .announcements-div > div:nth-of-type(3){
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
-
-
 
 
 .announcements-div p:nth-child(1){
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 14px;
-  margin-bottom: 3px;
+  font-size: 0.875rem;
+  margin-bottom: 0.1875rem;
 }
 
 .announcements-div p:nth-child(2){
-  font-size: 12px;
+  font-size: 0.75rem;
   color: grey;
 }
 
@@ -292,12 +291,12 @@ aside {
   row-gap: 20px;
   width: 300px;
   border-radius: 5px;
-  padding: 18px;
+  padding: 1.125rem;
 }
 
 .t {
   display: flex;
-  column-gap: 15px;
+  column-gap: 0.9375rem;
   align-items: center;
 }
 
@@ -305,12 +304,16 @@ aside {
   background-color: rgb(216, 247, 255);
   border-radius: 50%;
   display: flex;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .tsvg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.t p:first-child{
+  font-size: 0.875rem;
 }
 
 
@@ -319,6 +322,7 @@ aside {
   margin-top: 3px;
   color: grey;
   font-weight: 300;
+  font-size: 0.75rem;
 }
 
 .trending-text {
